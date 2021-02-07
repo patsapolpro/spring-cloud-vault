@@ -1,0 +1,16 @@
+spring:
+  cloud:
+    vault:
+      host: localhost
+      token: s.rRTDCYnWrwv3Y872n2Jqwzst
+      port: 8200
+      scheme: http
+      kv:
+        enabled: true
+        backend: secret
+        default-context: apps/local
+      authentication: token
+      application-name: apps/local
+      connection-timeout: 5000
+      read-timeout: 15000
+      config.lifecycle.enabled: false
